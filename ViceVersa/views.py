@@ -10,7 +10,7 @@ def reverse(request):
 	user_text_list = user_text.split()
 	number_words = len(user_text_list)
 	if number_words == 1:
-		s = ' '
+		s = ''
 	else:
 		s = 's'
 	return render(request, 'reverse.html', {'usertext':user_text, 'reversetext':reverse_text, 'numberwords':number_words, 's':s})
